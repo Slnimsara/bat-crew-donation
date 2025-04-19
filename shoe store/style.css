@@ -1,0 +1,221 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://i.natgeofe.com/n/2cf64015-d343-4981-90cd-c528a65812e0/01-stray-dogs-nationalgeographic_1927666.jpg?w=1280&h=853') no-repeat center center/cover;
+    color: #333;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 80px;
+  }
+  
+  /* Header */
+  /* Header */
+header {
+    background-color: rgba(0, 128, 128, 0.7);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards; /* Header Fade In */
+  }
+  
+  header h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+  
+  /* Bat Emoji Styling */
+  .batman-emoji {
+    font-size: 4rem;  /* Adjust size as needed */
+    vertical-align: middle;
+    margin-right: 15px;
+  }
+  
+  
+  header h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+  
+  /* Donation Section */
+  .donation-section {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px); /* Optional: adds a blur effect to the background */
+    opacity: 0;
+    animation: fadeInUp 2s ease-out forwards; /* Slower Donation Section Fade In Up */
+  }
+  
+  .donation-section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .donation-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #7f8c8d;
+  }
+  
+  .donation-container {
+    background: white;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    opacity: 0;
+    animation: fadeInUp 2.5s ease-out forwards; /* Slower Donation Form Fade In Up */
+  }
+  
+  .donation-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .donation-container input[type="number"] {
+    padding: 15px;
+    font-size: 1.3rem;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  .donation-container input[type="number"]:focus {
+    border-color: #28a745;
+  }
+  
+  .donate-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 18px 30px;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    max-width: 250px;
+    margin-top: 15px;
+    opacity: 0;
+    animation: fadeInUp 3s ease-out forwards; /* Slower Donation Button Fade In Up */
+  }
+  
+  .donate-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* About Section */
+  .about-section {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .about-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #7f8c8d;
+  }
+  
+  footer {
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer a {
+    color: #f39c12;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    header h1 {
+      font-size: 2.8rem;
+    }
+  
+    header p {
+      font-size: 1.2rem;
+    }
+  
+    .donation-section, .about-section {
+      padding: 40px 20px;
+    }
+  
+    .donation-container {
+      padding: 20px;
+    }
+  
+    .donate-btn {
+      width: 100%;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px); /* Starts further below */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
